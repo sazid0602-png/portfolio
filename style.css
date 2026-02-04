@@ -51,26 +51,35 @@ h2 { font-size: 2rem; margin-bottom: 3rem; color: var(--primary); }
 footer { background: var(--primary); color: var(--white); text-align: center; padding: 5rem 10%; }
 
 .socials a { color: white; font-size: 1.5rem; margin: 0 10px; }
+/* Container to give the button some breathing room */
+.cv-container {
+    margin-top: 30px;
+}
+
 .download-btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background-color: var(--accent);
-    color: white;
+    padding: 12px 30px;
+    background-color: transparent; 
+    color: #ffffff; 
+    border: 2px solid var(--accent); /* Clean green border */
     text-decoration: none;
     border-radius: 50px;
-    font-weight: bold;
-    transition: 0.3s;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .download-btn:hover {
-    background-color: #388e3c;
-    transform: translateY(-2px);
+    background-color: var(--accent); /* Fills with green on hover */
+    color: var(--primary); /* Changes text color for better contrast */
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .download-btn i {
-    margin-right: 8px;
+    margin-right: 10px;
 }
 /* This makes the number blurry */
 .blur-text {
