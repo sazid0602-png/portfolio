@@ -53,7 +53,7 @@ footer { background: var(--primary); color: var(--white); text-align: center; pa
 .socials a { color: white; font-size: 1.5rem; margin: 0 10px; }
 /* Container to give the button some breathing room */
 .cv-container {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .download-btn {
