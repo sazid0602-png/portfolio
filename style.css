@@ -72,3 +72,16 @@ footer { background: var(--primary); color: var(--white); text-align: center; pa
 .download-btn i {
     margin-right: 8px;
 }
+/* This makes the number blurry */
+.blur-text {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+    cursor: pointer;
+    user-select: none; /* Prevents people from highlighting and copying it easily */
+}
+
+/* This clears the blur when you hover the mouse over it */
+.blur-text:hover {
+    filter: blur(0);
+    user-select: auto;
+}
