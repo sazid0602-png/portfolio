@@ -147,3 +147,61 @@ body {
     background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.03) 1px, transparent 0);
     background-size: 30px 30px;
 }
+/* Navigation Styling */
+nav {
+    background: var(--secondary);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(82, 183, 136, 0.2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* This puts them in one line properly */
+    gap: 25px;     /* This adds space between buttons */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff !important; /* Forces it to stay white, not blue */
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Fixes the blue color after clicking */
+nav ul li a:visited {
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    color: var(--accent) !important; /* Turns green on hover */
+}
+
+.logo {
+    font-weight: bold;
+    color: var(--accent);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+/* Global Link Fix */
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+a:visited {
+    color: var(--accent); /* Stops links from turning purple/blue */
+}
+
+a:hover {
+    opacity: 0.8;
+}
