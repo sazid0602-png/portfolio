@@ -58,17 +58,31 @@ footer { background: var(--primary); color: var(--white); text-align: center; pa
 
 .download-btn {
     display: inline-block;
-    padding: 8px 20px; /* Reduced from 12px 30px */
+    padding: 8px 20px;
     background-color: transparent; 
     color: #ffffff; 
-    border: 1.5px solid var(--accent); /* Slightly thinner border */
+    border: 1.5px solid var(--accent);
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 0.85rem; /* Reduced from 1rem */
-    transition: all 0.3s ease;
+    font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    /* This line creates the animation */
+    transition: all 0.3s ease-in-out; 
+}
+
+/* This is the animation that happens on hover */
+.download-btn:hover {
+    background-color: var(--accent); /* Fills with green */
+    color: var(--primary); /* Text turns dark green */
+    transform: translateY(-3px); /* Moves up slightly */
+    box-shadow: 0 5px 15px rgba(82, 183, 136, 0.4); /* Adds a soft glow */
+    cursor: pointer;
+}
+
+.download-btn i {
+    margin-right: 8px;
 }
 /* This makes the number blurry */
 .blur-text {
