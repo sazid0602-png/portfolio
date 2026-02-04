@@ -85,3 +85,17 @@ footer { background: var(--primary); color: var(--white); text-align: center; pa
     filter: blur(0);
     user-select: auto;
 }
+/* This applies the blur effect */
+.blur-text {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+    cursor: pointer;
+    user-select: none; /* Prevents easy copying by bots */
+    display: inline-block;
+}
+
+/* This clears the blur on hover */
+.blur-text:hover {
+    filter: blur(0);
+    user-select: auto;
+}
